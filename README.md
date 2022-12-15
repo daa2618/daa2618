@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Dev
 - 👀 I’m interested in Research and Data Analytics
-- 🌱 I’m currently learning Machine Leraning for solving business questions
+- 🌱 I’m currently learning Machine Learning for solving business questions
 - 💞️ I’m looking to collaborate on Machine Learning and market research
 - 📫 How to reach me: anand26dev@gmail.com
 
