@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Dev Anand Anbarasu (daa2618)
+# 👋 Hi, I'm Dev A
 
 ## 👨‍💻 Profession
 **Research Analyst** with a passion for transforming data into actionable insights.
