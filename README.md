@@ -12,6 +12,8 @@
 - [Datapopy](https://github.com/daa2618/datapopy): API wrapper to work with data.police.uk
 - [London Data Store](https://github.com/daa2618/london_data_store): Module to search, filter, extract data from London Data Store
 - [Transport Crimes London](https://github.com/daa2618/transport-crimes-london): A self-serving python dashboard to visualise reported crimes from Transport for London
+- [Data Gov UK](https://github.com/daa2618/data_gov_uk): API to search, filter, extract data from [data.gov.uk](https://www.data.gov.uk)
+
 
 ## 🌐 Connect with Me
 - [LinkedIn](https://www.linkedin.com/in/dev-anand-anbarasu)
