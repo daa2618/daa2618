@@ -9,6 +9,7 @@
 - Data Analytics
 
 ## 🚀 Featured Project
+- [UK House Price Index](https://github.com/daa2618/uk_house_price_index.git): A self-serving python dashboard to visualise UK house price index by geography and time period
 - [Datapopy](https://github.com/daa2618/datapopy): API wrapper to work with data.police.uk
 - [London Data Store](https://github.com/daa2618/london_data_store): Module to search, filter, extract data from London Data Store
 - [Transport Crimes London](https://github.com/daa2618/transport-crimes-london): A self-serving python dashboard to visualise reported crimes from Transport for London
