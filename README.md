@@ -30,7 +30,7 @@
 * **[UK House Price Index](https://github.com/daa2618/uk_house_price_index.git):** A self-serving Python dashboard to visualise UK house price index by geography and time period.
 * **[Datapopy](https://github.com/daa2618/datapopy):** Python API wrapper designed to streamline data extraction from data.police.uk.
 * **[London Data Store](https://github.com/daa2618/london_data_store):** Module to search, filter, and extract data from the London Data Store.
-* **[More Socrata](https://github.com/daa2618/more_socrata):** Enhanced Python client for the Socrata Open Data API.
+* **[More Socrata](https://github.com/daa2618/sodakit/):** Enhanced Python client for the Socrata Open Data API.
 
 ---
 
