@@ -1,5 +1,5 @@
 # 👋 Hi, I'm Dev A
-## 👨‍💻 Data & Technical Analyst 
+## 👨‍💻 Data Scientist & ML Engineer
 
 **Research Analyst & Developer** specialized in transforming complex datasets into actionable intelligence. My work sits at the intersection of **Machine Learning**, **Financial Engineering**, and **Data Automation**. 
 
