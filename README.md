@@ -5,9 +5,29 @@ Research Analyst and Developer specialised in transforming complex datasets into
 
 ---
 
+### Featured Project: [BrandSpotter](https://github.com/daa2618/brandspotter)
+
+A three-stage logo detection and identification pipeline that knows when it does not know. New brands appear constantly in real-world footage, so instead of forcing every crop into the closest known class, BrandSpotter rejects logos it has never seen.
+
+**Detection** (YOLO11m) locates logo regions, **classification** (ResNet50) identifies the brand, and an **open-set rejection** stage (entropy/energy scoring) flags unknown brands rather than mislabelling them. All models trained from scratch on [LogoDet-3K](https://github.com/Wangjing1551/LogoDet-3K-Dataset) (3,000 logo classes, 158,652 images).
+
+```text
+Image -> YOLO11 detection -> ResNet50 classification -> open-set rejection -> known brand | "unknown"
+```
+
+| Stage | Model | Headline metric |
+|-------|-------|-----------------|
+| Detection | YOLO11m | mAP@0.5 = 0.894, mAP@0.5:0.95 = 0.639 |
+| Classification | ResNet50 | Top-1 = 0.889, Top-5 = 0.966, Macro F1 = 0.895 (35 brands) |
+| Open-set rejection | Entropy scoring | AUROC = 0.897 vs 15 brands never seen in training |
+
+Reproducible local-prep plus Colab (T4) training workflow, leakage-safe train/val/test splits, published weights on [HuggingFace](https://huggingface.co/vectorized-dev/brandspotter), full evaluation notebooks, and a documented account of the v1 open-set operating-point trade-offs rather than cherry-picked numbers.
+
+---
+
 ### Technical Expertise
 
-* **Machine Learning and Computer Vision:** YOLOv8/v11 Object Detection, PyTorch, ResNet Classification, Multi-stage Clustering (HDBSCAN), Cloud Vision API Benchmarking (AWS Rekognition, Azure, Google Vision).
+* **Machine Learning and Computer Vision:** YOLO11 / YOLOv8 Object Detection, PyTorch, ResNet50 Classification, Open-Set Recognition (entropy/energy rejection), Multi-stage Clustering (HDBSCAN), Cloud Vision API Benchmarking (AWS Rekognition, Azure, Google Vision).
 * **Data Engineering:** Modular ETL Pipelines, REST API Aggregation (SERP, Alpha Vantage, Polygon.io), Async/Concurrent Processing, NAS Integration, Automated Data Updates.
 * **Financial Data and Analysis:** Batch Backtesting Frameworks, Indicator Analysis (Tom DeMark), Market Cap Screeners, Portfolio Transaction Logs.
 * **Tools:** Python, SQL, PowerBI, Google Colab, DGX (GPU Training), Jira, Confluence.
@@ -25,6 +45,7 @@ Research Analyst and Developer specialised in transforming complex datasets into
 
 ### Open Source Projects
 
+* **[BrandSpotter](https://github.com/daa2618/brandspotter):** Three-stage YOLO11 + ResNet50 + open-set rejection pipeline for logo detection with built-in unknown-brand rejection, trained from scratch on LogoDet-3K.
 * **[UK House Price Index](https://github.com/daa2618/uk_house_price_index.git):** Self-serving Python dashboard to visualise UK house price index by geography and time period.
 * **[Datapopy](https://github.com/daa2618/datapopy):** Python API wrapper for streamlined data extraction from data.police.uk.
 * **[London Data Store](https://github.com/daa2618/london_data_store):** Module to search, filter, and extract data from the London Data Store.
@@ -33,6 +54,7 @@ Research Analyst and Developer specialised in transforming complex datasets into
 ---
 
 ### Connect
+
 - [LinkedIn](https://www.linkedin.com/in/dev-anand-anbarasu)
 - [Portfolio Website](https://dev-analyst-portfolio.onrender.com/)
 
