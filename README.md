@@ -56,6 +56,6 @@ Reproducible local-prep plus Colab (T4) training workflow, leakage-safe train/va
 ### Connect
 
 - [LinkedIn](https://www.linkedin.com/in/dev-anand-anbarasu)
-- [Portfolio Website](https://dev-analyst-portfolio.onrender.com/)
+- [Portfolio Website](https://daa2618.github.io)
 
 *Currently focused on productionising ML pipelines for sports technology and expanding open-source contributions in computer vision.*
