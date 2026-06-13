@@ -5,11 +5,18 @@ Research Analyst and Developer specialised in transforming complex datasets into
 
 ---
 
-### Featured Project: [UK House Price Index Dashboard](https://github.com/daa2618/uk_house_price_index.git)
+### Featured Project: [BirdSpotter — Open-Set Bird Species Recognition](https://birdspotter-demo-207832056402.europe-west2.run.app)
 
-A self-serve Python dashboard for exploring the UK House Price Index across geography and time. It pulls the official HM Land Registry data, normalises it, and lets you slice price trends by region and period without wrestling with the raw releases.
+A bird-species classifier that knows when it does not know. Most classifiers force every image into their nearest known class, so show them a species they were never trained on and they confidently mislabel it. BirdSpotter adds an entropy-based open-set rejection stage that abstains, returning "unknown" instead of guessing wrong.
 
-The project is a compact example of the data-engineering pattern I reach for often: an API/feed aggregation layer, a clean transformation step, and an interactive front end on top, kept reproducible end to end.
+Trained from scratch on CUB-200-2011 (160 known species, with 40 held out entirely as unknown). A ResNet50 backbone with two-phase fine-tuning and calibration discipline, served via FastAPI + Gradio in Docker and deployed live on Google Cloud Run.
+
+| Stage | Approach | Headline metric |
+|-------|----------|-----------------|
+| Classification | ResNet50 | Top-1 = 0.781, Top-5 = 0.954 (160 known species) |
+| Open-set rejection | Entropy scoring | AUROC = 0.756 vs 40 held-out unknown species |
+
+Built to release standard: leakage-safe train/val/test splits, its own test suite, and a published (not hidden) limitation, namely that fine-grained look-alike species are genuinely hard to reject. **[Try the live demo](https://birdspotter-demo-207832056402.europe-west2.run.app)** with a non-bird photo and watch it return "unknown".
 
 ---
 
